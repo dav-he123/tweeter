@@ -1,0 +1,27 @@
+body {
+  background: rgb(235, 213, 213);
+  font-family: "Bungee";
+}
+nav {
+  background: #4056a1;
+  height: 120px;
+  width: 100%;
+  top: 0;
+  position: fixed;
+  z-index: 2;
+  color: #ffff;
+  padding: 1.5em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-toggle {
+  font-size: 23px;
+  font-family: "Times New Roman", sans-serif;
+}
+
+.button-toggle .fas:hover {
+  cursor: pointer;
+  box-shadow: 5px 10px 15px yellow;
+}
