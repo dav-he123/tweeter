@@ -130,6 +130,17 @@ $(document).ready(function() {
   });
 
   $(".new-tweet").hide();
+
+  $(document).scroll(function() {
+    if ($(window).scrollTop() > 400) {
+      $("#button-scrolltop").fadeIn();
+      $("#button-scrolltop").click(function() {
+        $(window).scrollTop(0);
+      });
+    } else {
+      $("#button-scrolltop").fadeOut();
+    }
+  });
 });
 
 const escape = function(str) {
