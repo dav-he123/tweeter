@@ -110,12 +110,26 @@ $(document).ready(function() {
       method: "POST",
       data: $form.serialize(),
       success: () => {
+        $(".errormessage").text("");
         loadTweets();
+        $("#areatext")
+          .val("")
+          .focus();
       }
     });
   });
 
   loadTweets();
+
+  $(".button-toggle").click(function() {
+    $(".errormessage").text("");
+    $("#areatext").val("");
+
+    $(".new-tweet").slideToggle("slow", function() {});
+    $(".new-tweet textarea").focus();
+  });
+
+  $(".new-tweet").hide();
 });
 
 const escape = function(str) {

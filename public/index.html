@@ -48,13 +48,17 @@
     <nav>
       <span>tweeter</span>
       <span class="button-toggle">
-        <b>Write a new tweet </b> <i class="fas fa-angle-double-down"></i>
+        <b>Write a new tweet </b>
+        <div>
+          <i class="fas fa-angle-double-down"></i>
+          <!-- <i id="double-cursor" class="fas fa-angle-double-down"></i> -->
+        </div>
       </span>
     </nav>
 
     <header>
       <div>
-        <img src="/images/profile-hex.png" />
+        <img src="/images/toronto-282415.png" />
       </div>
       <br />
       <div>
@@ -67,13 +71,13 @@
         <h2>Compose Tweet</h2>
         <!-- <form class="form-inline" action="/tweets/" method="POST"> -->
         <form id="new-form-tweet" action="/tweets/" method="POST">
+          <span class="errormessage"></span>
           <textarea
             id="areatext"
             name="text"
             placeholder="What are you humming about?"
           ></textarea>
           <input class="button" type="submit" value="Tweet" />
-          <span class="errormessage"></span>
           <span id="counter">140</span>
         </form>
       </section>

@@ -19,9 +19,33 @@ nav {
 .button-toggle {
   font-size: 23px;
   font-family: "Times New Roman", sans-serif;
+  display: block;
+}
+
+.button-toggle .fas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  /* align-items: center; */
+  margin: 10px;
 }
 
 .button-toggle .fas:hover {
   cursor: pointer;
-  box-shadow: 5px 10px 15px yellow;
+  color: black;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-9px);
+  }
+}
+
+.button-toggle .fas {
+  animation: bounce 0.3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
 }

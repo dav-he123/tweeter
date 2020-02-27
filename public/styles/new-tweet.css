@@ -87,3 +87,7 @@ article.tweet:hover {
 article.tweet:hover .tweetusername {
   opacity: 1;
 }
+
+.new-tweet .errormessage {
+  color: blue;
+}
