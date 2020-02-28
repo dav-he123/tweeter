@@ -94,9 +94,7 @@ main {
   }
 }
 
-/* tablet size*/
-/* media query when when width is below 1024px */
-
+/* media query for table size when when width is below 1024px */
 @media only screen and (max-width: 1024px) {
   #head {
     display: flex;
@@ -110,8 +108,6 @@ main {
   main {
     width: 100%;
     padding: 12px;
-    /* margin-top: 25em; */
-    /* padding: 5px; */
   }
 
   #img {
