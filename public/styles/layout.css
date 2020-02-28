@@ -68,6 +68,7 @@ main {
   animation-iteration-count: infinite;
 }
 
+/* media query declared when width is above 1024px */
 @media only screen and (min-width: 1024px) {
   /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
 
@@ -94,6 +95,8 @@ main {
 }
 
 /* tablet size*/
+/* media query when when width is below 1024px */
+
 @media only screen and (max-width: 1024px) {
   #head {
     display: flex;

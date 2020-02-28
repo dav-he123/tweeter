@@ -1,9 +1,4 @@
 body > header {
-  /* height: 400px;
-  width: 100%;
-  /* left: 0; */
-  /* position: relative; */
-  /* right: 0; */
   color: #ffff;
   padding: 1.5em;
 
@@ -30,11 +25,13 @@ header img {
   align-items: center;
 }
 
+/* media query declared for header when width is below 1024px */
 @media only screen and (max-width: 1024px) {
   #head {
     width: 100%;
   }
 }
+/* media query declared for header when width is above 1024px */
 @media only screen and (min-width: 1024px) {
   #head {
     margin-top: 150px;

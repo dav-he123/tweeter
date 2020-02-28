@@ -42,6 +42,7 @@ const renderTweets = function(tweets) {
   });
 };
 
+/* createTweetElement is decalred to obtain information for avatars, name, handle and text when tweet is created */
 const createTweetElement = function(tweet) {
   let $tweet = $("<article>").addClass("tweet");
   let html = `<header>
@@ -73,6 +74,7 @@ const loadTweets = () => {
   });
 };
 
+/* declared document.ready to introduce the DOM   */
 $(document).ready(function() {
   createTweetElement({
     user: {
@@ -105,6 +107,7 @@ $(document).ready(function() {
       return;
     }
 
+    /* ajax query is delcared to display the error message, and perform the method "POST" */
     $.ajax({
       url: "/tweets",
       method: "POST",
@@ -131,6 +134,7 @@ $(document).ready(function() {
 
   $(".new-tweet").hide();
 
+  /* stretch exercise to use scrollTop function to click arrow to automatically to scroll to top of the page  */
   $(document).scroll(function() {
     if ($(window).scrollTop() > 400) {
       $("#button-scrolltop").fadeIn();
