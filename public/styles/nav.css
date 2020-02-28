@@ -32,7 +32,7 @@ nav {
 
 .button-toggle .fas:hover {
   cursor: pointer;
-  color: black;
+  color: red;
 }
 
 @keyframes bounce {
@@ -45,7 +45,23 @@ nav {
 }
 
 .button-toggle .fas {
-  animation: bounce 0.3s;
+  animation: bounce 0.38s;
   animation-direction: alternate;
   animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+  nav {
+    background-color: #111111;
+    color: #f0f0f0;
+    text-align: left;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  nav {
+    background-color: #8a008a;
+    background-image: url(https://www.transparenttextures.com/patterns/45-degree-fabric-light.png);
+  }
 }

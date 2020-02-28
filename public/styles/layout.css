@@ -48,3 +48,71 @@ main {
   border-radius: 10px; /* Rounded corners */
   font-size: 18px; /* Increase font size */
 }
+
+#button-scrolltop:hover {
+  color: blue;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-9px);
+  }
+}
+
+#button-scrolltop {
+  animation: bounce 0.38s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Write CSS rules that target Laptop/Desktop screen sizes and beyond */
+
+  #head {
+    float: left;
+    height: 400px;
+    width: 40%;
+    /* left: 0; */
+    position: relative;
+    margin-top: 10em;
+    margin-left: 3.2em;
+  }
+
+  main {
+    width: 50%;
+    margin: 0 auto;
+    float: right;
+    margin-top: 8em;
+    padding: 14px;
+
+    max-width: 1024px;
+    font-size: 16px;
+  }
+}
+
+/* tablet size*/
+@media only screen and (max-width: 1024px) {
+  #head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin-top: 120px;
+  }
+
+  main {
+    width: 100%;
+    padding: 12px;
+    /* margin-top: 25em; */
+    /* padding: 5px; */
+  }
+
+  #img {
+    max-width: 7em;
+    max-height: 7em;
+  }
+}
