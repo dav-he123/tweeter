@@ -2,6 +2,7 @@ body {
   background: rgb(235, 213, 213);
   font-family: "Bungee";
 }
+
 nav {
   background: #4056a1;
   height: 120px;
@@ -35,6 +36,7 @@ nav {
   color: red;
 }
 
+/* cursor for button toggle in the nav bar bounces up and down  */
 @keyframes bounce {
   0% {
     transform: translateY(0);
