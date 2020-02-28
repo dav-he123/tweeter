@@ -15,3 +15,13 @@ This repository is the starter code for the project: Students will fork and clon
 
 - Express
 - Node 5.10.x or above
+
+## Screenshots
+
+!["Screenshot of nav bar changes color to match header"](https://github.com/dav-he123/tweeter/blob/master/docs/color-change-nav-bar.png?raw=true)
+!["Screenshot of submitting a tweet"](https://github.com/dav-he123/tweeter/blob/master/docs/first-tweet-submit.png?raw=true)
+!["Screenshot of hovering over tweet container"](https://github.com/dav-he123/tweeter/blob/master/docs/hover-tweet-container.png?raw=true)
+!["Screenshot of hovering over tweet container"](https://github.com/dav-he123/tweeter/blob/master/docs/scoll-top-cursor.png?raw=true)
+!["Screenshot of table mode"](https://github.com/dav-he123/tweeter/blob/master/docs/tablet-mode.png?raw=true)
+!["Screenshot of tweet something error"](https://github.com/dav-he123/tweeter/blob/master/docs/tweet-something-error.png?raw=true)
+!["Screenshot of tweet too long error"](https://github.com/dav-he123/tweeter/blob/master/docs/tweet-too-long-error.png?raw=true)
