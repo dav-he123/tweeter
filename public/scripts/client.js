@@ -118,6 +118,7 @@ $(document).ready(function() {
         $("#areatext")
           .val("")
           .focus();
+        $("#counter").text("140");
       }
     });
   });
